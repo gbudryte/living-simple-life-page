@@ -15,7 +15,6 @@ html, body {
 body{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 
 header{
@@ -69,7 +68,7 @@ li{
     display: inline-block;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: #000000;
     letter-spacing: 1px;
@@ -90,10 +89,17 @@ main{
 
 article{
     width: 75%;
+    & img{
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
 }
 
 aside{
-    border: 20px solid #ececec;
+    border: 15px solid #ececec;
     padding: 1rem;
     width: 25%;
     height: 50vh;
@@ -106,12 +112,10 @@ aside{
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.5rem;
     }
+    & img{
+        display: inline-block;
+        width: 100%;
+        object-fit: fill;
+    }
 }
 
-img{
-    height: 15rem;
-    width: 100%;
-    object-fit: cover;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
